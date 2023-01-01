@@ -56,6 +56,7 @@ def open_or_senior(data):
 def get_sum(a, b):
     return sum(range(min(a, b), max(a, b) + 1))
 
+
 # Rock Paper Scissors
 # Let's play! You have to return which player won! In case of a draw return Draw!.
 #
@@ -64,4 +65,9 @@ def get_sum(a, b):
 # "scissors", "paper" --> "Player 1 won!"
 # "scissors", "rock" --> "Player 2 won!"
 # "paper", "paper" --> "Draw!"
+def rps(p1, p2):
+    _rps = {'rock': 0, 'paper': 1, 'scissors': 2}
+    results = ['Draw!', 'Player 1 won!', 'Player 2 won!']
+    return results[_rps[p1] - _rps[p2]]
+
 
