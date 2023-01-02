@@ -71,3 +71,36 @@ def rps(p1, p2):
     return results[_rps[p1] - _rps[p2]]
 
 
+# Write a function to convert a name into initials. This kata strictly takes two words with one space in between them.
+#
+# The output should be two capital letters with a dot separating them.
+#
+# It should look like this:
+#
+# Sam Harris => S.H
+#
+# patrick feeney => P.F
+def abbrev_name(name):
+    lst = name.split()
+    return f"{lst[0][0].upper()}.{lst[1][0].upper()}"
+
+
+# Task:
+# Given a list of integers, determine whether the sum of its elements is odd or even.
+#
+# Give your answer as a string matching "odd" or "even".
+#
+# If the input array is empty consider it as: [0] (array with a zero).
+#
+# Examples:
+# Input: [0]
+# Output: "even"
+#
+# Input: [0, 1, 4]
+# Output: "odd"
+#
+# Input: [0, -1, -5]
+# Output: "even"
+# Have fun!
+def odd_or_even(arr):
+    return ('even', 'odd')[sum(arr) % 2]
