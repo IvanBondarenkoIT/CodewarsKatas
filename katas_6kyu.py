@@ -40,3 +40,13 @@ def solution(s):
             res += ' '
         res += i
     return res
+
+class Solution:
+    def containsDuplicate(self, nums: List[int]) -> bool:
+        set = ()
+        for i in nums:
+            if i in set:
+                return True
+            else:
+                set += i
+        return false
